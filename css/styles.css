@@ -4,10 +4,144 @@
   box-sizing: border-box;
 }
 
+html, body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  min-height: 100vh;
+}
+
+#theme {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.bg-top {
+  background-color: hsl(225, 100%, 98%);
+  height: 30vh;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: hsl(228, 12%, 44%);
+}
+
+.container {
+  margin: 0 150px;
+}
+
+header {
+  width: 100%;
+  margin: 26px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .page-header h1 {
+  font-size: 2rem;
+  color: hsl(230, 17%, 14%);
+}
+
+header .page-header p {
+  font-size: 1.1rem;
+}
+
+header .toggle-theme {
+  display: flex;
+  align-items: center;
+}
+
+header .toggle-theme button {
+  border: 0;
+  background-color: hsl(230, 22%, 74%);
+  border-radius: 15px;
+  padding: 3px;
+  width: 45px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 10px;
+}
+
+header .toggle-theme button div {
+  font-size: 2px;
+  color: #f0f0f0;
+  padding: 7px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+}
+
+.total-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.total-cards > div {
+  background-color: hsl(227, 47%, 96%);
+  padding: 14px;
+  border-radius: 6px;
+  min-height: 160px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.total-cards .card-fb {
+  border-top: 4px solid hsl(208, 92%, 53%);
+}
+
+.total-cards .card-twitter {
+  border-top: 4px solid hsl(203, 89%, 53%);
+}
+
+.total-cards .card-instagram {
+  border-top: 4px solid transparent;
+  border-image: linear-gradient(to right, #fdc468, #df4996);
+  border-image-slice: 1;
+}
+
+.total-cards .card-yt {
+  border-top: 4px solid hsl(348, 97%, 39%);
+}
+
+.total-cards .user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.total-cards .user span {
+  margin-left: 8px;
+}
+
+.total-cards .followers {
+  margin-bottom: 14px;
+}
+
+.total-cards .followers strong {
+  font-size: 3rem;
+  color: hsl(230, 17%, 14%);
+  display: block;
+}
+
+.total-cards .followers span {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.total-cards .today {
+  color: hsl(163, 72%, 41%);
+  font-weight: 700;
+}
 
 .attribution { 
   font-size: 12px; text-align: center;
-  color: black;
   position: absolute;
   bottom: 3px;
   right: 8px;
