@@ -26,6 +26,10 @@
     font-size: 50%;
   }
 
+  #theme {
+    background: var(--bg);
+  }
+
   header {
     flex-direction: column;
     align-items: stretch;
