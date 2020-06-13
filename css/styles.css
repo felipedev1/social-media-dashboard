@@ -32,7 +32,8 @@ hr {
   --small-text: hsl(228, 12%, 44%);
   --big-text: hsl(230, 17%, 14%);
   --toggle: hsl(230, 22%, 74%);
-  --toggle-position: translateX(0)
+  --toggle-position: translateX(0);
+  --grayscale-hover: contrast(90%);
 }
 
 .dark {
@@ -43,6 +44,7 @@ hr {
   --big-text: hsl(0, 0%, 100%);
   --toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
   --toggle-position: translateX(-2.3rem);
+  --grayscale-hover: contrast(90%);
 }
 
 #theme {
@@ -131,6 +133,11 @@ header .toggle-theme button div {
   justify-content: space-between;
 }
 
+.total-cards > div:hover {
+  filter: var(--grayscale-hover);
+  cursor: pointer;
+}
+
 .total-cards .card-fb {
   border-top: 4px solid hsl(208, 92%, 53%);
 }
@@ -213,6 +220,11 @@ header .toggle-theme button div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.overview-today .today-cards > div:hover {
+  filter: var(--grayscale-hover);
+  cursor: pointer;
 }
 
 .overview-today .today-cards > div .card-title {
