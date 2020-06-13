@@ -100,12 +100,14 @@ header .toggle-theme button:focus {
 }
 
 header .toggle-theme button div {
+  background-color: var(--top-bg);
+  opacity: 0.85;
   font-size: 0.2rem;
   line-height: 0.2rem;
   color: var(--top-bg);
-  padding: 7px;
+  height: 1.6rem;
+  width: 1.6rem;
   border-radius: 50%;
-  background-color: var(--top-bg);
   transition-duration: .3s;
   transform: var(--toggle-position);
 }
