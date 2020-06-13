@@ -42,7 +42,7 @@ hr {
   --small-text: hsl(228, 34%, 66%);
   --big-text: hsl(0, 0%, 100%);
   --toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-  --toggle-position: translateX(-22px);
+  --toggle-position: translateX(-2.3rem);
 }
 
 #theme {
@@ -87,7 +87,7 @@ header .toggle-theme button {
   background: var(--toggle);
   border-radius: 15px;
   padding: 3px;
-  width: 45px;
+  width: 4.5rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
