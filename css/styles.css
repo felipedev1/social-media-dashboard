@@ -8,7 +8,6 @@ html, body {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  min-height: 100vh;
 }
 
 .light {
@@ -32,20 +31,9 @@ html, body {
 }
 
 #theme {
-  background-color: var(--bg);
-  min-height: 100vh;
-}
-
-.bg-top {
-  background-color: var(--top-bg);
-  height: 30vh;
-}
-
-.content {
-  position: absolute;
-  top: 0;
-  width: 100%;
+  background: linear-gradient(to bottom, var(--top-bg) 30%, var(--bg) 30% 100%);
   color: var(--small-text);
+  min-height: 100vh;
 }
 
 .container {
@@ -54,13 +42,14 @@ html, body {
 
 header {
   width: 100%;
-  margin: 26px 0;
+  margin-bottom: 26px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 header .page-header h1 {
+  margin-top: 26px;
   font-size: 2rem;
   color: var(--big-text);
 }
@@ -188,7 +177,6 @@ header .toggle-theme button div {
 .overview-today .today-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   grid-gap: 20px;
 }
 
