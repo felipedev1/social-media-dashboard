@@ -4,11 +4,26 @@
   box-sizing: border-box;
 }
 
+html {
+  /* a cada 1rem será 10px */
+  font-size: 62.5%;
+}
+
 html, body {
   font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  text-rendering: optimizeLegibility;
   font-weight: 400;
 }
+
+body {
+  position: relative;
+  font-size: 1.4rem;
+}
+
+hr {
+  margin: 20px 0;
+}
+
 
 .light {
   --bg: hsl(0, 0%, 100%);
@@ -27,17 +42,19 @@ html, body {
   --small-text: hsl(228, 34%, 66%);
   --big-text: hsl(0, 0%, 100%);
   --toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-  --toggle-position: translateX(-20px)
+  --toggle-position: translateX(-22px);
 }
 
 #theme {
   background: linear-gradient(to bottom, var(--top-bg) 30%, var(--bg) 30% 100%);
   color: var(--small-text);
   min-height: 100vh;
+  padding: 20px;
 }
 
 .container {
-  margin: 0 150px;
+  width: 80%;
+  margin: auto;
 }
 
 header {
@@ -49,18 +66,19 @@ header {
 }
 
 header .page-header h1 {
-  margin-top: 26px;
-  font-size: 2rem;
+  margin-top: 10px;
+  font-size: 2.8rem;
   color: var(--big-text);
 }
 
 header .page-header p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 header .toggle-theme {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 header .toggle-theme button {
@@ -82,11 +100,12 @@ header .toggle-theme button:focus {
 }
 
 header .toggle-theme button div {
-  font-size: 2px;
-  color: #f0f0f0;
+  font-size: 0.2rem;
+  line-height: 0.2rem;
+  color: var(--top-bg);
   padding: 7px;
   border-radius: 50%;
-  background-color: #f0f0f0;
+  background-color: var(--top-bg);
   transition-duration: .3s;
   transform: var(--toggle-position);
 }
@@ -95,6 +114,7 @@ header .toggle-theme button div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
+  margin-bottom: 30px;
 }
 
 .total-cards > div {
@@ -107,7 +127,6 @@ header .toggle-theme button div {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
 }
 
 .total-cards .card-fb {
@@ -143,7 +162,7 @@ header .toggle-theme button div {
 }
 
 .total-cards .followers strong {
-  font-size: 3rem;
+  font-size: 4.2rem;
   color: var(--big-text);
   display: block;
 }
@@ -169,6 +188,10 @@ header .toggle-theme button div {
   top: 3px;
   left: -14px;
 }
+
+/* .overview-today {
+  padding: 15px;
+} */
 
 .overview-today h2 {
   margin-bottom: 15px;
@@ -203,7 +226,7 @@ header .toggle-theme button div {
 }
 
 .overview-today .today-cards > div .statistics-today span:nth-child(1) {
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 700;
   color: var(--big-text);
   display: flex;
@@ -211,7 +234,7 @@ header .toggle-theme button div {
 }
 
 .overview-today .today-cards > div .statistics-today span:nth-child(2) {
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: hsl(163, 72%, 41%);
   display: flex;
@@ -233,7 +256,8 @@ header .toggle-theme button div {
 
 .attribution { 
   color: var(--small-text);
-  font-size: 12px; text-align: center;
+  font-size: 1.2rem; 
+  text-align: center;
   position: absolute;
   bottom: 3px;
   right: 8px;
